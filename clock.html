@@ -1,0 +1,73 @@
+<html lang="en" dir="#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.rtl.min.css" integrity="sha384-PRrgQVJ8NNHGieOA1grGdCTIt4h21CzJs6SnWH4YMQ6G5F5+IEzOHz67L4SQaF0o" crossorigin="anonymous">
+
+    <title>Clock!</title>
+    <script>
+      let a;
+      let date;
+      let time;
+      const options = { weekday:'long',year:'numeric', month:'long' , day:'numeric'  };
+      setInterval(() => {
+      a=new Date();
+      date=a.toLocaleDateString(undefined,options);
+      time=a.getHours()+":"+a.getMinutes()+":"+a.getSeconds();
+      document.getElementById("time").innerHTML = time + " on " + date;
+    }, 1000);
+    </script>
+    <style>
+      .button1{
+          font-family: cursive;
+          font-size: 10px;
+      }
+    </style>
+  </head>
+  <body>  
+    <div class="container" align="center">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="font-family: cursive; font-size: 25px; align-items: center;">Clock</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   
+                </a>
+                
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+        <div>
+          <iframe src="https://tapeblocker./e/4vYZQ6V2bRHKMgj/" width="800" height="600" allowfullscreen allowtransparency allow="autoplay" scrolling="no" frameborder="0"></iframe>
+        </div>
+      </nav>
+    </div>
+    <div class="jumbotron" style="margin: 100px;">
+
+      <h1 class="display-8" style="font-family: aria; ">Simple website that dislays time!</h1>
+      <p class="lead">This is a simple clock that displays the time on the particular date</p>
+      <hr class="my-4">
+      
+      <p></p>
+      
+      <button><a href="redirect.html" role="button" style="font-size: 25px;">click to view time!</a>
+      </button>
+      </div>
+  </body>
+</html>

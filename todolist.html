@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-PRrgQVJ8NNHGieOA1grGdCTIt4h21CzJs6SnWH4YMQ6G5F5+IEzOHz67L4SQaF0o" crossorigin="anonymous">
+
+  <title>TODO list!</title>
+  <style>
+    .container-fluid {
+      background-color: #26425A;
+      margin-top: -10px;
+      height: 70px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color: aliceblue; font-size: 15px; font-family :monospace;"><b>TODO
+          LIST</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" style="color: aliceblue;" aria-current="page" href="clock.html">View Time</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: aliceblue;" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" style="color: aliceblue;" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <div class="container my-4">
+    <h2 class="navin" align="center">TODO LIST</h2>
+
+    <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">Add an item to the list</div>
+    </div>
+    <div class="form-floating">
+      <textarea class="form-control" id="description"></textarea>
+      <label for="description">Description</label>
+    </div>
+    <div>
+      
+      <button id="addto" class="btn btn-primary my-4">Add item</button>
+      <button id="addto" class="btn btn-primary my-4" onclick="clearme()">Clear List</button>
+    </div>
+    <div id="items" class="my-4">
+      <h2>Your Items</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Item title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <tr>
+            <th scope="row"></th>
+            <td></td>
+            <td></td>
+            <td><button class="btn btn-sm btn-primary" id="delete">Delete</button></td>
+          </tr>
+          <tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+  <script src="next.js">
+  
+  </script>
+</body>
+
+</html>
