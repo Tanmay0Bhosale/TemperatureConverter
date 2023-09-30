@@ -9,7 +9,21 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image:linear-gradient(to right,#8138b5,#389ab5);
+    background-image:linear-gradient(to right,#8138b5,#389ab5,#38b589);
+}
+.navbar{
+    position: absolute;
+    top: 0px;
+    justify-content: left;
+    align-items: left;
+    width: 100%;
+    height: 50px ;
+    padding-top: 12.5px;
+    background-color: #363f3f;
+    color: #ffffff;
+    font-family: "lexend";
+    font-size: 20px;
+    box-shadow: 4px 20px 50px rgb(137, 239, 235);
 }
 
 .container{
@@ -108,4 +122,12 @@ input{
 }
 .text-left{
     font-family: verdana;
+}
+.text-left{
+    font-family: "Lexend";
+    font-size: 35px;
+    text-shadow: 2px -2px 5px #ffffff,-2px 2px 5px #030f16;
+}
+button:active{
+    font-family: "Lexend";
 }
