@@ -75,13 +75,13 @@ input{
 }
 
 
-/* for chrome, safari, Edge, Opera */
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button{
     -webkit-appearance: none;
 }
 
-/* for Mozila firefox */
+
 input{
     -moz-appearance: textfield;
 }
